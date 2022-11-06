@@ -24,10 +24,15 @@
     <meta property="twitter:description" content="Reto de desarrollo de Página web responsive del día 5 de Nov. 2022">
     <meta property="twitter:image" content="https://i.postimg.cc/1tJ6gC0h/image-hero.jpg">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
+
+
     <main class="wraper">
         <section class="cabecera">
             <section class="cabecera1">
@@ -40,7 +45,7 @@
                     <ul >
                         <li><a href="">About</a> </li>
                         <li><a href="">Careers</a> </li>
-                        <li><a href="">Events</a> </li>
+                        <li><a id="open-popup" style="cursor: pointer"><b>Login</b></a> </li>
                         <li><a href="">Products</a> </li>
                         <li><a href="">Support</a> </li>
                     </ul>
@@ -88,6 +93,9 @@
                 </div>
             </div>
         </section>
+
+
+
         <section class="fotos" id="fotos2">
             <div class="portafolio_G1">
                 <div>
@@ -154,12 +162,34 @@
                      </ul>
                 </div>
                 <div class="pie-copy">
-                    <p>Copyright 2021 Loopstudios. All rights reserved</p>
+                    <p>©Copyright 2021 Loopstudios. All rights reserved</p>
                 </div>
             </div>
         </section>
+
+        <div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Inicio de sesión</h3>
+				<h4>Ingrese usuario y clave</h4>
+				<form action="">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre">
+						<input type="password" placeholder="Clave">
+					</div>
+					<input type="submit" class="btn-submit" value="Login">
+				</form>
+                <div style="display: flex; justify-content:center; align-items: center; font-size: 9px; padding: 23px; ">
+                    <div style="border-right: solid; width: 50%;"><a style="text-decoration: none;" href=""><h1>¿olvisate tu clave?</a></h1></div>
+                    <div style=" width: 50%;" ><a style="text-decoration: none;" href=""><h1>registrate</a></h1></div>
+                </div>
+			</div>
+		</div>
     </main>
 
 
+    
+
+    <script src="./funciones.js" ></script>
 </body>
 </html>
