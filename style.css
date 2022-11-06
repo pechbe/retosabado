@@ -197,12 +197,11 @@
         flex-direction: column;
     }
 
-
-
     .cuerpo0{
         position:sticky;
         align-items:center;
     }
+
     .cuerpo1, .cuerpo2{
         position: unset;
         top: 0%;
@@ -254,8 +253,6 @@
         display:block;
     }
 
-  
-
     .cabecera1-menu ul{
         flex-direction: column;
         padding: 10px;
@@ -279,8 +276,8 @@
     }
 
     #btn-menu:checked ~ .cabecera1-menu{
-       
-        margin: 90%;
+
+        margin-left: 190%;
         
     }
 
