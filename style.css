@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wraper{
+    margin: auto;
+    max-width: 960px;   
+
+}
+
+#btn-menu{
+    display: none;
+}
+
+.cabecera label{
+    display: none;
+    
+}
+
+.cabecera{
+    background-image: url(./src/image-hero.jpg);
+}
+
+.cabecera label:hover{
+    cursor: pointer;
+}
+
+.cabecera1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.25rem;
+    padding-left: 1.25rem;
+}
+
+.cabecera1-menu{
+    display: flex;
+    padding: 2rem;
+}
+
+.cabecera1-menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+.cabecera1-menu ul a{
+    text-decoration: none;
+    padding-right: 1.25rem;
+    color: aliceblue;
+}
+
+.cabecera1 p{
+    color: aliceblue;
+}
+
+.cabecera2 {
+    height: 15.625rem;
+    color: aliceblue;
+    
+}
+
+.cabecera2-1{
+    display: flex;
+    align-items:flex-start;
+    padding-top: 6.25rem;
+}
+
+.cabecera2-1-1{
+    width: 10px;
+
+}
+
+.cabecera2-1-2{
+    width: 250px;
+    border: solid;
+    height: 6.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+.cabecera2-1-3{
+    width: 60px;
+}
+
+.cuerpo0{
+    position:relative;
+}
+
+.cuerpo1{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.cuerpo1-img{
+    width: 50%;
+    height: 50%;
+}
+
+.cuerpo2{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    background-color: rgb(240, 252, 255);
+    text-align:start;
+}
+
+.creaciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.25rem;
+    padding-top: 5.625rem;
+}
+
+.boton-estilo{
+    background-color: white;
+    border: solid 1px rgb(19, 15, 15);
+
+    box-shadow: 0px 2px 4px #0000003f;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    padding: 10px 3em;
+    cursor: pointer;
+}
+
+.fotos{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+}
+
+.foto-img{
+    width: 13.125rem;
+    height: 18.75rem;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.pie{
+    align-items: center;
+    background-color: black;
+    height: 9.375rem;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 1.25rem;
+    padding-right: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-menu{
+    display: flex;
+    padding: 2rem;
+}
+
+.pie-menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+.pie-menu ul a{
+    text-decoration: none;
+    padding-right: 1.25rem;
+    color: aliceblue;
+}
+
+.pie-link{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top: 1.25rem;
+}
+
+.pie-redes{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.pie-redes div{
+    padding-left: 1.25rem;
+}
+
+.pie-final{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top: 0px;
+}
+
+
+@media(max-width:726px){
+    .cabecera2-1, .creaciones{
+        flex-direction: column;
+    }
+
+
+
+    .cuerpo0{
+        position:sticky;
+        align-items:center;
+    }
+    .cuerpo1, .cuerpo2{
+        position: unset;
+        top: 0%;
+        left: 0%;
+        align-items:center;
+        text-align:center;
+        width:auto;
+    }
+
+    .fotos{
+        flex-direction: column;
+        align-items:center;
+     
+    }
+    
+    .foto-img{
+        width: 19.125rem;
+        height: 12.75rem;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .pie{
+
+        height: 19.375rem;
+
+    }
+
+    .pie-link{
+        flex-direction: column;
+    }
+    
+    .pie-final{
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+    }
+
+    .cabecera1{
+        /*flex-direction: column;*/
+        align-items:center;
+    }
+
+    .cabecera1 label{
+        display:block;
+    }
+
+    .cabecera1-img{
+        display:block;
+    }
+
+  
+
+    .cabecera1-menu ul{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cabecera1-menu li{
+        /*border-top:1px solid #fff;*/
+        justify-items: center;        
+    }
+
+    .pie-menu{
+        flex-grow: 1;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .pie-menu ul{
+        flex-direction: column;
+        list-style: none;
+        
+    }
+
+    #btn-menu:checked ~ .cabecera1-menu{
+       
+        margin: 90%;
+        
+    }
+
+    
+}
